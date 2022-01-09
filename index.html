@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration | login form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <h1>sign up</h1>
+  <div class="Registration">
+    <form class="Registration" action="" method="get" accept-charset="utf-8">
+      <div class="input">
+        <input type="text" name="username" id="username" placeholder="username"/>
+      </div>
+      <div class="input">
+        <input type="email" name="email" id="email" placeholder="Email Addr" required title="Stanley"/>
+      </div>
+      <div class="input pass">
+        <input type="password" name="password" id="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$@('@')$!%*#?&{}[\]<>()^+=;:'&quot;/\\|-]).{6,}" title="The input must contain at least one one number and an uppercase letter" oninput="check()" required/>
+        <span id="eye"></span>
+      </div>
+      <div class="submit">
+        <input type="submit" id="submit" value="sign up" />
+      </div>
+    </form>
+  </div>
+  
+  <div class="login">
+    <form class="login" action="" method="get" accept-charset="utf-8">
+      <div class="input">
+        <input type="email" name="email" id="email" placeholder="Email Addr" required/>
+      </div>
+      <div class="input">
+        <input type="password" name="password" id="password" placeholder="password" />
+      </div>
+      <div class="submit">
+        <input type="submit" id="submit" value="sign up" />
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
